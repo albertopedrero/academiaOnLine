@@ -1,0 +1,81 @@
+.container {
+  color: #FFFFFF;
+  max-width: 580px;
+  margin: 2rem auto;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+  background-color: #000000 ;
+  border: 2px solid #BBBBBB;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+input {
+  &.valido {
+    border: 2px solid green;
+  }
+  &.no-valido{
+    border: 2px solid red;
+  }
+
+}
+
+button {
+  background-color: #E15C26;
+  color: #000000;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 10px;
+  margin: 1rem;
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  background-color: #97330b;
+  color: #eadfdf;
+
+
+}
+
+button:disabled {
+  background-color: #de8968;
+  cursor: none;
+
+}
+.mensaje {
+  color: #E15C26;
+  opacity: 0;
+  transition: all .5s ease-in;
+  &.error-activo {
+    opacity: 1;
+  }
+}
+
+label.linea {
+  display: inline;
+  padding-right: 1rem;
+}
+
+div.proteccion p {
+  font-size: 0.8rem;
+  color: #DDDDDD;
+}
+
+div.proteccion label {
+  padding-right: 0;
+}

@@ -1,0 +1,14 @@
+@if (curso !== undefined){
+  {{curso.titulo}}
+  <ul class="listado">
+      @for (alumno of curso.alumnos_matriculados; track alumno){
+        <li>{{alumno}}</li>
+      }
+  </ul>
+  <hr>
+  <label for="nombre">Nombre y Apellidos</label><br/>
+  <input type="text" id="nombre" #nombre>
+  <input type="button" value="Matricular" (click)="matricular(curso.titulo, nombre)">
+} @else {
+  <p>Ningún curso seleccionado</p>
+}

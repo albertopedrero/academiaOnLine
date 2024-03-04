@@ -1,0 +1,83 @@
+.container {
+  background-color: #212221;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 3rem;
+}
+header {
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+#precios {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+
+}
+.precio {
+  max-width: 30%;
+  min-width: 25%;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.encabezado {
+  padding: 0.5rem;
+  background-color: #3E3E3E;
+}
+.aconsejado {
+  background-color: #DD5A25;
+}
+.preferido {
+  background-color: #C02D28;
+}
+
+.descripcion {
+  background-color: #000000;
+  padding: 1.5rem;
+  color: #BDBDBD;
+}
+.descripcion p {
+  font-size: 0.9rem;
+}
+.descripcion p.importe {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.detalle {
+  background-color: #3E3E3E;
+  padding: 1.5rem;
+  color: #BDBDBD;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+
+}
+.detalle ul  {
+  list-style-type: disc;
+}
+
+button.quiero {
+  background-color: #C02D28;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 10px 1.5rem;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 25px;
+  border: 0;
+}

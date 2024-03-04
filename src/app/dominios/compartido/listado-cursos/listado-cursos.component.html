@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div id="listado">
+    <h2>Los mejores cursos en tecnología</h2>
+
+    <ul>
+      @for (curso of listaCursos; track curso){
+        <li>
+          <app-curso
+            [curso]="curso"
+            (eventoMatricular)="matricular($event)"></app-curso>
+        </li>
+
+      }
+    </ul>
+  </div>
+
+</div>
+

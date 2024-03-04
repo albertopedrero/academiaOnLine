@@ -1,0 +1,54 @@
+header {
+  background-color: #040927;
+  color: #FFFFFF;
+  border-bottom: 5px solid #E15C26;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  min-width: 20%;
+}
+.principal {
+  text-align: center;
+}
+h1 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;;
+}
+ul li {
+  display: inline;
+  margin-right: 2rem;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:visited {
+  color: #DDDDDD;
+}
+
+.registro {
+  position: relative;
+  top: -2rem;
+}
+
+.registro button {
+  padding: 5px 20px;
+  background-color: #DD5A25;
+  color: #FFFFFF;
+  margin-right: 1rem;
+  border-radius: 40px;
+  border: 0
+}
+.registro button:hover{
+  cursor: pointer;
+  background-color:  #8e2f0a;
+  color: #FFFFFF;
+}

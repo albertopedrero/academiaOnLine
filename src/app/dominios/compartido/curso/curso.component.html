@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="encabezado">
+    <div class="titulo">
+      <h3><a [routerLink]="['/detalle', curso.titulo]">{{curso.titulo}}</a></h3>
+      <div class="avatar">
+              <img src="../../../../assets/img/cartoon-character-shirt-face-facial-expression-1443781-pxhere.com.jpg" alt="">
+              <p>{{curso.profesor}}</p>
+
+      </div>
+    </div>
+    <!--<button (click)="matricular(curso)">Matricular</button>-->
+
+  </div>
+
+  <details>
+    <summary>Temario</summary>
+    <ol>
+      @for (tema of curso.temario; track tema){
+        <li>{{tema}}</li>
+      }
+    </ol>
+  </details>
+  <details>
+    <summary>Valoraciones</summary>
+    <ol>
+      @for (valoracion of curso.valoraciones; track valoracion){
+        <li>
+          <div class="nombre">{{valoracion.nombre}} </div>
+          <div class="estrellas">{{valoracion.calificacion}} estrellas</div>
+          <div class="comentario">{{valoracion.comentario}}</div></li>
+      }
+    </ol>
+  </details>
+</div>
+
